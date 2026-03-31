@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shankhadip Das | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Shankha, a Web Developer showcasing projects and skills.">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Glow Orbs -->
+  <div class="blur-circle one"></div>
+  <div class="blur-circle two"></div>
+  <div class="blur-circle three"></div>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo" data-page="home">
+        <span class="logo-bracket">&lt;</span>SD<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" data-page="home"> <i class="fas fa-house"></i> <span>Home</span></a>
+        <a href="#about" class="nav-link" data-page="about"> <i class="fas fa-user"></i> <span>About</span></a>
+        <a href="#skills" class="nav-link" data-page="skills"> <i class="fas fa-code"></i> <span>Skills</span></a>
+        <a href="#contact" class="nav-link" data-page="contact"> <i class="fas fa-envelope"></i>
+          <span>Contact</span></a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGES WRAPPER ============ -->
+  <main>
+
+    <!-- ===== PAGE: HOME ===== -->
+    <section id="home" class="page active">
+      <div class="hero">
+
+        <div class="hero-content">
+          <p class="greeting"> Hello, I'm</p>
+          <h1 class="hero-name">Shankhadip <span class="highlight">Das</span></h1>
+          <h2 class="hero-role"><span id="typing"></span><span class="cursor">|</span></h2>
+          <p class="hero-desc">
+            Passionate frontend developer building modern, responsive and
+            interactive web experiences that delight users.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn primary" id="contactNavBtn">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+            <a href="#about" class="btn outline" id="aboutNavBtn">
+              <i class="fas fa-user"></i> About Me
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Tech Stacks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-ring">
+            <img src="PFP.jpeg" alt="Shankhadip Das">
+          </div>
+          <div class="float-badge badge-html">HTML</div>
+          <div class="float-badge badge-css">CSS</div>
+          <div class="float-badge badge-js">JS</div>
+        </div>
+
+      </div>
+
+      <!-- Projects preview inside Home -->
+      <div class="projects-section">
+        <div class="section-header">
+          <h2>Featured <span class="highlight">Projects</span></h2>
+          <p>Things I've built recently</p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-icon"><i class="fab fa-amazon"></i></div>
+            <h3>Amazon Clone</h3>
+            <p>A pixel-perfect, responsive Amazon homepage built entirely with HTML & CSS.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <a href="https://shankha03.github.io/Ecommerce_Replica_SD/" target="_blank" class="project-link">
+              View on GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Portfolio Website</h3>
+            <p>Modern animated personal portfolio with smooth interactions built in JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="https://github.com/shankha03" target="_blank" class="project-link">
+              View on GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+            <h3>Climora - Weather Web-App</h3>
+            <p>Modern animated Weather application with smooth interactions built in JavaScript. Real-time weather app with charts, animations, and responsive UI.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>JSON</span><span>Chart.Js</span>
+            </div>
+            <a href="https://github.com/shankha03" target="_blank" class="project-link">
+              View on GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <h3>Coming Soon</h3>
+            <p>Exciting new projects involving React and data visualization — stay tuned!</p>
+            <div class="project-tags">
+              <span>Stay Tuned!</span>
+            </div>
+            <a href="#" class="project-link muted">
+              In Progress <i class="fas fa-hourglass-half"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAGE: ABOUT ===== -->
+    <section id="about" class="page">
+      <div class="about-wrapper">
+
+        <div class="section-header centered">
+          <h2>About <span class="highlight">Me</span></h2>
+          <p>Get to know the person behind the code</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-col">
+            <div class="about-img-wrapper">
+              <img src="PFP.jpeg" alt="Shankhadip Das">
+              <div class="about-badge">
+                <i class="fas fa-laptop-code"></i>
+                <span>Frontend Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <h3>Hi there! I'm <span class="highlight">Shankhadip Das</span></h3>
+            <p class="about-bio">
+              I'm a passionate frontend developer from India, dedicated to crafting
+              beautiful, responsive, and user-friendly web experiences. I believe
+              great design and clean code go hand-in-hand.
+            </p>
+            <p class="about-bio">
+              Currently, I'm sharpening my JavaScript skills and diving deep into
+              Data Science fundamentals. My goal is to bridge the gap between
+              aesthetics and functionality to build impactful digital products.
+            </p>
+
+            <div class="about-info-cards">
+              <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Location</strong>
+                  <span>India</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Education</strong>
+                  <span>B.Tech - CSE</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-language"></i>
+                <div>
+                  <strong>Languages</strong>
+                  <span>English, Bengali, Hindi</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-heart"></i>
+                <div>
+                  <strong>Interests</strong>
+                  <span>Frontend Development, Web Development, Music</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="mailto:shankhadipdas2413@gmail.com" class="btn primary">
+                <i class="fas fa-envelope"></i> Email Me
+              </a>
+              <a href="https://github.com/shankha2413" target="_blank" class="btn outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PAGE: SKILLS ===== -->
+    <section id="skills" class="page">
+      <div class="skills-wrapper">
+
+        <div class="section-header centered">
+          <h2>My <span class="highlight">Skills</span></h2>
+          <p>Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-layout">
+
+          <div class="skill-bars-col">
+            <h3 class="skill-group-title">Proficiency Levels</h3>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span><i class="fab fa-js-square"></i> JavaScript</span>
+                <span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span><i class="fab fa-python"></i> Python (Basics)</span>
+                <span>55%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="55%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                <span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-tools-col">
+            <h3 class="skill-group-title">Tools & Technologies</h3>
+            <div class="tech-grid">
+              <div class="tech-card">
+                <i class="fab fa-html5" style="color:#e34f26"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="tech-card">
+                <i class="fab fa-css3-alt" style="color:#1572b6"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="tech-card">
+                <i class="fab fa-js-square" style="color:#f7df1e"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="tech-card">
+                <i class="fab fa-python" style="color:#3776ab"></i>
+                <span>Python</span>
+              </div>
+              <div class="tech-card">
+                <i class="fab fa-git-alt" style="color:#f05032"></i>
+                <span>Git</span>
+              </div>
+              <div class="tech-card">
+                <i class="fab fa-github" style="color:#fff"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="tech-card">
+                <i class="fas fa-terminal" style="color:#00f5d4"></i>
+                <span>CLI</span>
+              </div>
+              <div class="tech-card">
+                <i class="fas fa-database" style="color:#6c63ff"></i>
+                <span>SQL Basics</span>
+              </div>
+            </div>
+
+            <div class="learning-badge">
+              <i class="fas fa-fire"></i>
+              <span>Currently learning <strong>React.js</strong> & <strong>Data Science</strong></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAGE: CONTACT ===== -->
+    <section id="contact" class="page">
+      <div class="contact-wrapper">
+
+        <div class="section-header centered">
+          <h2>Get In <span class="highlight">Touch</span></h2>
+          <p>Have a project in mind? Let's talk!</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info-col">
+            <h3>Let's connect <span class="highlight">✨</span></h3>
+            <p>
+              Whether you want to collaborate on a project, ask a question,
+              or just say hello — I'd love to hear from you. My inbox is always open!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:shankhadipdas2413@gmail.com">shankhadipdas2413@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/Shankha03" target="_blank">github.com/Shankha03</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/shankhadipdas24" target="_blank">shankhadipdas24</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap"><i class="fab fa-instagram"></i></div>
+                <div>
+                  <strong>Instagram</strong>
+                  <a href="https://www.instagram.com/shankha_2413" target="_blank">@shankha_2413</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Shankhadip Das" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="hello@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Project Collaboration" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn primary full-width" id="submitBtn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <p class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo" data-page="home">
+          <span class="logo-bracket">&lt;</span>SD<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>
+          Crafting modern digital experiences with clean code and great design.
+          Always learning, always building.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home" data-page="home">Home</a></li>
+          <li><a href="#about" data-page="about">About</a></li>
+          <li><a href="#skills" data-page="skills">Skills</a></li>
+          <li><a href="#contact" data-page="contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect With Me</h4>
+        <div class="footer-social-icons">
+          <a href="https://github.com/shankha2413" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shankhadipdas24" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/shankha_2413" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:shankhadipdas2413@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-availability">
+          <span class="online-dot"></span> Open to opportunities
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Shankhadip Das. Crafted with <i class="fas fa-heart" style="color:#f66;"></i> and lots of ☕</p>
+      <p>Designed &amp; built by Shankhadip Das</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
